@@ -1,1 +1,19 @@
 
+node{
+    
+    
+    
+    stage('clone java project') {
+    git branch: 'main', url: 'https://github.com/kiranvudiga/kiran01.git'
+}
+    
+    
+    stage('execute maven targets') {
+    sh 'mvn install'
+}
+    
+
+    
+    
+    
+}
